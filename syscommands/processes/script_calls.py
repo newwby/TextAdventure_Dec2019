@@ -150,10 +150,9 @@ def d_script_cow():
 
 # Dialogue_CallID_010 - people trying to leave the village
 def d_script010(call_sign):
-  # added type conversion to catch TypeError I can't track down in 2021 test
-    if list(call_sign) not in wv.leave_the_village:
+    if call_sign not in wv.leave_village_list:
         wv.leave_the_village =+ 1
-        wv.leave_the_village.append(call_sign)
+        wv.leave_village_list.append(call_sign)
         quest_leaving_the_village()
 
 

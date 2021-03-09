@@ -44,7 +44,7 @@ switches_that_influence_final_score = ["switch_village_affair_public",
 # Dialogue lists to prevent NPCs progressing quests by repeated chatting
 # ------
 
-call007_list, call008_list, call009_list, leave_village_list = [], [], [], []
+call007_list, call008_list, call009_list, leave_village_list, ds11_list = [], [], [], [], []
 
 # ------
 # Quest switches from dialogue/items; most are set false initially, changed by chatting with NPCs/exploring buildings
